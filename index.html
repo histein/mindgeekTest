@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/favicon.webp">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Movies</title>
+</head>
+<body>
+    <div class="loader"></div>
+    <button class="modal-btn"></button>
+    <div class="countdown-container"><h1>Countdown: <span id="timer"></span></h1></div>
+    <div class="movie-container">
+
+        <div class="modal-bg">
+            
+                <div class="modal">
+                    <h1>My Dirty Hobby</h1>
+                    <h2 class="red-color">Free Registration!</h2>
+                    <div class="error-box"></div>
+                    <!-- <form> -->
+                        <input autocomplete="off" required id="username" type="text" placeholder="username" name="username">
+                        <input autocomplete="off" required id="password" type="password" placeholder="Password" name="password">
+                        <input autocomplete="off" required id="email" type="email" placeholder="Email" name="email">
+
+                        <button class="register-btn" onclick="checkInput()">Register</button>
+                    <!-- </form> -->
+                    <span class="modal-close">X</span>
+                </div>
+            
+        </div>
+        <h1>Movies</h1>
+        <hr class="styled-hr">
+        <div class="box" id="movies">
+
+        </div>
+    </div>
+    
+<!-- SCRIPTS -->
+<script src="assets/js/fetch-movies-api.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/user-input.js"></script>
+<script src="assets/js/countdown.js"></script>
+<script src="assets/js/loader.js"></script>
+</body>
+</html>
